@@ -60,6 +60,10 @@
 		}
 		&:focus {
 			outline: 2px solid $activecolor;
+			color: $activecolor;
+		}
+		&:focus::after {
+			background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L6 6.00001L0.999997 1' stroke='%237943A4'/%3E%3C/svg%3E ");
 		}
 	}
 	&__dropdown-btn::after {
@@ -72,4 +76,95 @@
 		background-image: url('../images/dist/arrow.svg');
 		transition: background-image .2s ease-in-out;
 	}
+	&__dropdown-list {
+		position: absolute;
+		top: 171px;
+		overflow: scroll;
+		box-sizing: border-box;
+		width: 300px;
+		height: 300px;
+		background-color: rgba(0, 0, 0, 0.6);
+		transform: scaleY(0);
+		transition: transform .2s ease-in-out;
+		transform-origin: 100% 0
+	}
+	&__dropdown-list-active {
+		transform: scaleY(1);
+	}
+	&__dropdown-artists {
+		overflow: scroll;
+		margin: 40px;
+		height: 220px;
+	}
+	&__dropdown-artist {
+		padding: 9px 14px 12px;
+		font-size: 14px;
+		line-height: 19px;
+		color: $whitecolor;
+		background-color: black;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	&__dropdown-bg1 {
+		background-image: url('../images/dist/drop1.jpg');
+	}
+	&__dropdown-bg2 {
+		background-image: url('../images/dist/drop2.jpg');
+	}
+	&__dropdown-bg3 {
+		background-image: url('../images/dist/drop3.jpg');
+	}
+	&__dropdown-bg4 {
+		background-image: url('../images/dist/drop4.jpg');
+	}
+	&__dropdown-bg5 {
+		background-image: url('../images/dist/drop5.jpg');
+	}
+	&__dropdown-bg6 {
+		background-image: url('../images/dist/drop6.jpg');
+	}
+	&__dropdown-bg7 {
+		background-image: url('../images/dist/drop7.jpg');
+	}
+	&__dropdown-bg8 {
+		background-image: url('../images/dist/drop8.jpg');
+	}
+	&__dropdown-bg9 {
+		background-image: url('../images/dist/drop9.jpg');
+	}
+	&__dropdown-bg10 {
+		background-image: url('../images/dist/drop10.jpg');
+	}
+	&__dropdown-bg11 {
+		background-image: url('../images/dist/drop11.jpg');
+	}
+	&__dropdown-bg12 {
+		background-image: url('../images/dist/drop12.jpg');
+	}
+	&__dropdown-bg13 {
+		background-image: url('../images/dist/drop13.jpg');
+	}
+	&__dropdown-bg14 {
+		background-image: url('../images/dist/drop14.jpg');
+	}
+	&__dropdown-bg15 {
+		background-image: url('../images/dist/drop15.jpg');
+	}
+	&__dropdown-bg16 {
+		background-image: url('../images/dist/drop16.jpg');
+	}
+	&__dropdown-bg17 {
+		background-image: url('../images/dist/drop17.jpg');
+	}
+	&__dropdown-bg18 {
+		background-image: url('../images/dist/drop18.jpg');
+	}
+	&__dropdown-bg19 {
+		background-image: url('../images/dist/drop19.jpg');
+	}
+	&__dropdown-bg20 {
+		background-image: url('../images/dist/drop20.jpg');
+	}
+
 }
