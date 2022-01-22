@@ -14,13 +14,13 @@
 		color: $whitecolor;
 		transition: color .2s ease-in-out;
 		&:hover {
-			color: $purcolor;
+			color: $hovercolor;
 		}
 		&:active {
-			color: #7943A4;
+			color: $activecolor;
 		}
 		&:focus {
-			outline: 2px solid #7943A4;
+			outline: 2px solid $activecolor;
 		}
 	}
 	
