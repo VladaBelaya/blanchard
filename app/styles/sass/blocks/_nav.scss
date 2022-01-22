@@ -12,6 +12,16 @@
 		font-weight: 600;
 		line-height: 25px;
 		color: $whitecolor;
-
+		transition: color .2s ease-in-out;
+		&:hover {
+			color: $hovercolor;
+		}
+		&:active {
+			color: $activecolor;
+		}
+		&:focus {
+			outline: 2px solid $activecolor;
+		}
 	}
+	
 }
