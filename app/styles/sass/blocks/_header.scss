@@ -43,6 +43,9 @@
 		font-size: 18px;
 		line-height: 25px;
 		color: $whitecolor;
+		transition-timing-function: ease-in-out;
+		transition-duration: .2s;
+		transition-property: color, background-image;
 		&:hover {
 			color: $hovercolor;
 		}
@@ -67,5 +70,6 @@
 		width: 12px;
 		height: 7px;
 		background-image: url('../images/dist/arrow.svg');
+		transition: background-image .2s ease-in-out;
 	}
 }

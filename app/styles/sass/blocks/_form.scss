@@ -6,6 +6,17 @@
 		width: 100%;
 		padding: 6px 10px 3px 0;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+		transition: border-bottom .2s ease-in-out;
+		outline: none;
+		&:hover {
+			border-bottom: 1px solid $hovercolor;
+		}
+		&:active {
+			border-bottom: 1px solid $activecolor;
+		}
+		&:focus {
+			border-bottom: 1px solid $activecolor;
+		}
 	}
 	&__input::placeholder {
 		font-size: 18px;
