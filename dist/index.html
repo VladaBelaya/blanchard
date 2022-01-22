@@ -1,33 +1,114 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
-
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
-
-	<title>OptimizedHTML 5</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
+	<meta charset="UTF-8">
+	<meta name="description" content="Blanchard - художественная галерея">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta property="og:image" content="images/dist/main1.jpg">
+	<title>Blanchard - художественная галерея</title>
+	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/app.min.css">
-
 </head>
 
 <body>
 
-	<div style="max-width: 700px; margin: auto">
+<header class="header">
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2 class="heading">Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
-
+	<div class="header__up">
+		<div class="container container_header">
+			<a href="" class="header__logo"><img src="images/dist/logo.svg" alt="Blanchard - художественная галерея"></a>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Галерея</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">События</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Издания</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<a href="#" class="header__login">Войти</a>
+		</div>
 	</div>
+	<div class="header__down">
+		<div class="container container_header">
+			<ul class="header__styles">
+				<li class="header__style">
+					<button class="header__dropdown-btn">Реализм</button>
+					<div class="header__dropdown-list header__dropdown-list-active">
+						<ul class="header__dropdown-artists">
+							<li class="header__dropdown-artist header__dropdown-bg1">Алексей Венецианов</li>
+							<li class="header__dropdown-artist header__dropdown-bg2">Камиль Коро</li>
+							<li class="header__dropdown-artist header__dropdown-bg3">Джордж Кетлин</li>
+							<li class="header__dropdown-artist header__dropdown-bg4">Василий Садовников</li>
+							<li class="header__dropdown-artist header__dropdown-bg5">Константен Гис</li>
+						</ul>
+					</div>
+				</li>
+				<li class="header__style">
+					<button class="header__dropdown-btn">Импрессионизм</button>
+					<div class="header__dropdown-list">
+						<ul class="header__dropdown-artists">
+							<li class="header__dropdown-artist header__dropdown-bg6">Винсент Ван Гог</li>
+							<li class="header__dropdown-artist header__dropdown-bg7">Альфред Сислей</li>
+							<li class="header__dropdown-artist header__dropdown-bg8">Камиль Писсарро</li>
+							<li class="header__dropdown-artist header__dropdown-bg9">Клод Моне</li>
+							<li class="header__dropdown-artist header__dropdown-bg10">Константин Коровин</li>
+						</ul>
+					</div>
+				</li>
+				<li class="header__style">
+					<button class="header__dropdown-btn">Постимпрессионизм</button>
+					<div class="header__dropdown-list">
+						<ul class="header__dropdown-artists">
+							<li class="header__dropdown-artist header__dropdown-bg11">Камиль Писсарро</li>
+							<li class="header__dropdown-artist header__dropdown-bg12">Поль Сезанн</li>
+							<li class="header__dropdown-artist header__dropdown-bg13">Мейер де Хан</li>
+							<li class="header__dropdown-artist header__dropdown-bg14">Поль Гоген</li>
+							<li class="header__dropdown-artist header__dropdown-bg15">Шарль Ангран</li>
+						</ul>
+					</div>
+				</li>
+				<li class="header__style">
+					<button class="header__dropdown-btn">Авангард</button>
+					<div class="header__dropdown-list">
+						<ul class="header__dropdown-artists">
+							<li class="header__dropdown-artist header__dropdown-bg16"></li>
+							<li class="header__dropdown-artist header__dropdown-bg17"></li>
+							<li class="header__dropdown-artist header__dropdown-bg18"></li>
+							<li class="header__dropdown-artist header__dropdown-bg19"></li>
+							<li class="header__dropdown-artist header__dropdown-bg20"></li>
+						</ul>
+					</div>
+				</li>
+				<li class="header__style">
+					<button class="header__dropdown-btn">Футуризм</button>
+					<div class="header__dropdown-list">
+						<ul class="header__dropdown-artists">
+							<li class="header__dropdown-artist"></li>
+							<li class="header__dropdown-artist"></li>
+							<li class="header__dropdown-artist"></li>
+							<li class="header__dropdown-artist"></li>
+							<li class="header__dropdown-artist"></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<form class="form" action="">
+				<label class="form__label" for="search">
+				</label>
+				<input class="form__input" type="search" placeholder="Поиск по сайту" id="search">
+
+			</form>
+		</div>
+	</div>
+
+</header>
 
 	<script src="js/app.min.js"></script>
 
