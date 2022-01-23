@@ -1,8 +1,7 @@
-// // Import vendor jQuery plugin example
-// import '~/app/libs/mmenu/dist/mmenu.js'
+import initDropdown from './dropdown.js'
 
 document.addEventListener('DOMContentLoaded', () => {
-
+	initDropdown()
 	// Custom JS
 
 })
