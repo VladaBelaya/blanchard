@@ -96,15 +96,31 @@
 		height: 220px;
 	}
 	&__dropdown-artist {
-		padding: 9px 14px 12px;
+		background-repeat: no-repeat;
+		background-size: cover;
 		&:not(:last-child) {
 			margin-bottom: 20px;
 		}
+		
 	}
 	&__dropdown-link {
+		display: block;
+		padding: 9px 14px 12px;
+		border: 2px solid transparent;
 		font-size: 14px;
 		line-height: 19px;
 		color: $whitecolor;
+		transition: border .2s ease-in-out;
+		&:hover {
+			border: 2px solid $hovercolor;
+		}
+		&:active {
+			border: 2px solid $activecolor;
+		}
+		&:focus {
+			border: 2px solid $activecolor;
+			outline: none;
+		}
 	}
 	&__dropdown-bg1 {
 		background-image: url('../images/dist/drop1.jpg');
