@@ -11,7 +11,9 @@
 	<meta property="og:image" content="images/dist/main1.jpg">
 	<title>Blanchard - художественная галерея</title>
 	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
 	<link rel="stylesheet" href="css/app.min.css">
+	<script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 </head>
 
 <body>
@@ -40,61 +42,111 @@
 			<ul class="header__styles">
 				<li class="header__style">
 					<button class="header__dropdown-btn">Реализм</button>
-					<div class="header__dropdown-list header__dropdown-list-active">
-						<ul class="header__dropdown-artists">
-							<li class="header__dropdown-artist header__dropdown-bg1">Алексей Венецианов</li>
-							<li class="header__dropdown-artist header__dropdown-bg2">Камиль Коро</li>
-							<li class="header__dropdown-artist header__dropdown-bg3">Джордж Кетлин</li>
-							<li class="header__dropdown-artist header__dropdown-bg4">Василий Садовников</li>
-							<li class="header__dropdown-artist header__dropdown-bg5">Константен Гис</li>
+					<div class="header__dropdown-list">
+						<ul class="header__dropdown-artists" data-simplebar>
+							<li class="header__dropdown-artist header__dropdown-bg1">
+								<a href="#" class="header__dropdown-link">Алексей Венецианов</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg2">
+								<a href="#" class="header__dropdown-link">Камиль Коро</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg3">
+								<a href="#" class="header__dropdown-link">Джордж Кетлин</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg4">
+								<a href="#" class="header__dropdown-link">Василий Садовников</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg5">
+								<a href="#" class="header__dropdown-link">Константен Гис</a>
+							</li>
 						</ul>
 					</div>
 				</li>
 				<li class="header__style">
 					<button class="header__dropdown-btn">Импрессионизм</button>
 					<div class="header__dropdown-list">
-						<ul class="header__dropdown-artists">
-							<li class="header__dropdown-artist header__dropdown-bg6">Винсент Ван Гог</li>
-							<li class="header__dropdown-artist header__dropdown-bg7">Альфред Сислей</li>
-							<li class="header__dropdown-artist header__dropdown-bg8">Камиль Писсарро</li>
-							<li class="header__dropdown-artist header__dropdown-bg9">Клод Моне</li>
-							<li class="header__dropdown-artist header__dropdown-bg10">Константин Коровин</li>
+						<ul data-simplebar class="header__dropdown-artists">
+							<li class="header__dropdown-artist header__dropdown-bg6">
+								<a href="#" class="header__dropdown-link">Винсент Ван Гог</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg7">
+								<a href="#" class="header__dropdown-link">Альфред Сислей</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg8">
+								<a href="#" class="header__dropdown-link">Камиль Писсарро</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg9">
+								<a href="#" class="header__dropdown-link">Клод Моне</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg10">
+								<a href="#" class="header__dropdown-link">Константин Коровин</a>
+							</li>
 						</ul>
 					</div>
 				</li>
 				<li class="header__style">
 					<button class="header__dropdown-btn">Постимпрессионизм</button>
 					<div class="header__dropdown-list">
-						<ul class="header__dropdown-artists">
-							<li class="header__dropdown-artist header__dropdown-bg11">Камиль Писсарро</li>
-							<li class="header__dropdown-artist header__dropdown-bg12">Поль Сезанн</li>
-							<li class="header__dropdown-artist header__dropdown-bg13">Мейер де Хан</li>
-							<li class="header__dropdown-artist header__dropdown-bg14">Поль Гоген</li>
-							<li class="header__dropdown-artist header__dropdown-bg15">Шарль Ангран</li>
+						<ul data-simplebar class="header__dropdown-artists">
+							<li class="header__dropdown-artist header__dropdown-bg11">
+								<a href="#" class="header__dropdown-link">Камиль Писсарро</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg12">
+								<a href="#" class="header__dropdown-link">Поль Сезанн</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg13">
+								<a href="#" class="header__dropdown-link">Мейер де Хан</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg14">
+								<a href="#" class="header__dropdown-link">Поль Гоген</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg15">
+								<a href="#" class="header__dropdown-link"></a>
+							</li>
 						</ul>
 					</div>
 				</li>
 				<li class="header__style">
 					<button class="header__dropdown-btn">Авангард</button>
 					<div class="header__dropdown-list">
-						<ul class="header__dropdown-artists">
-							<li class="header__dropdown-artist header__dropdown-bg16"></li>
-							<li class="header__dropdown-artist header__dropdown-bg17"></li>
-							<li class="header__dropdown-artist header__dropdown-bg18"></li>
-							<li class="header__dropdown-artist header__dropdown-bg19"></li>
-							<li class="header__dropdown-artist header__dropdown-bg20"></li>
+						<ul data-simplebar class="header__dropdown-artists">
+							<li class="header__dropdown-artist header__dropdown-bg1">
+								<a href="#" class="header__dropdown-link">Казимир Малевич</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg2">
+								<a href="#" class="header__dropdown-link">Сальвадор Дали</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg3">
+								<a href="#" class="header__dropdown-link">Ричард Принс</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg4">
+								<a href="#" class="header__dropdown-link">Чжан Сяоган</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg5">
+								<a href="#" class="header__dropdown-link">Герхард Рихтер</a>
+							</li>
 						</ul>
 					</div>
 				</li>
 				<li class="header__style">
 					<button class="header__dropdown-btn">Футуризм</button>
 					<div class="header__dropdown-list">
-						<ul class="header__dropdown-artists">
-							<li class="header__dropdown-artist"></li>
-							<li class="header__dropdown-artist"></li>
-							<li class="header__dropdown-artist"></li>
-							<li class="header__dropdown-artist"></li>
-							<li class="header__dropdown-artist"></li>
+						<ul data-simplebar class="header__dropdown-artists">
+							<li class="header__dropdown-artist header__dropdown-bg6">
+								<a href="#" class="header__dropdown-link">Джакомо Балла</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg7">
+								<a href="#" class="header__dropdown-link">Джозеф Стелла</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg8">
+								<a href="#" class="header__dropdown-link">Карло Карра</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg9">
+								<a href="#" class="header__dropdown-link">Сирил Пауэр</a>
+							</li>
+							<li class="header__dropdown-artist header__dropdown-bg10">
+								<a href="#" class="header__dropdown-link">Джино Северини</a>
+							</li>
 						</ul>
 					</div>
 				</li>
