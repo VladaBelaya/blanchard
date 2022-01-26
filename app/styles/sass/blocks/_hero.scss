@@ -1,10 +1,6 @@
 .hero {
-	padding-bottom: 122px;
 	position: relative;
-	top: -172px;
-	z-index: -1;
-	height: 800px;
-
+	height: 630px;
 	&__heading {
 		margin-bottom: 19px;
 		font-size: 72px;
@@ -18,5 +14,12 @@
 		line-height: 30px;
 		font-weight: bold;
 		color: $whitecolor;
+	}
+	&__content {
+		position: absolute;
+		top: 240px;
+		left: 160px;
+		z-index: 1;
+		max-width: 31%;
 	}
 }
