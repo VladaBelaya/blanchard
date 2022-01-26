@@ -1,5 +1,6 @@
 .hero {
 	position: relative;
+	z-index: 0;
 	height: 630px;
 	&__heading {
 		margin-bottom: 19px;
@@ -17,7 +18,7 @@
 	}
 	&__content {
 		position: absolute;
-		top: 240px;
+		top: 68px;
 		left: 160px;
 		z-index: 1;
 		max-width: 31%;
