@@ -6,4 +6,11 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+	&_hero {
+		position: absolute;
+		z-index: 1;
+		top: 240px;
+		left: 160px;
+		max-width: 31%;
+	}
 }

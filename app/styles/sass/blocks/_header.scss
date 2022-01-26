@@ -46,6 +46,7 @@
 		transition-timing-function: ease-in-out;
 		transition-duration: .2s;
 		transition-property: color, background-image;
+		cursor: pointer;
 		&:hover {
 			color: $hovercolor;
 		}
