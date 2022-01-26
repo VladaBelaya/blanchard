@@ -1,0 +1,24 @@
+.btn {
+	padding: 22px 35px;
+	border-radius: 180px;
+	border: 2px solid transparent;
+	font-size: $textsize;
+	line-height: 25px;
+	font-weight: bold;
+	color: $whitecolor;
+	background-color: #9D5CD0;
+	transition-duration: .2s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, border;
+	&:hover {
+		border: 2px solid #D1A9F0;
+	}
+	&:active {
+		background-color: $activecolor;
+		border: 2px solid #D1A9F0;
+	}
+	&:focus {
+		outline: 2px solid $hovercolor;
+		outline-offset: 4px;
+	}
+}

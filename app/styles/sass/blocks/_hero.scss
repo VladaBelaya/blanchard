@@ -1,0 +1,22 @@
+.hero {
+	padding-bottom: 122px;
+	position: relative;
+	top: -172px;
+	z-index: -1;
+	height: 800px;
+
+	&__heading {
+		margin-bottom: 19px;
+		font-size: 72px;
+		line-height: 84px;
+		font-weight: bold;
+		color: $whitecolor;
+	}
+	&__descr {
+		margin-bottom: 91px;
+		font-size: $textsize;
+		line-height: 30px;
+		font-weight: bold;
+		color: $whitecolor;
+	}
+}

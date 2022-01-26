@@ -11,6 +11,7 @@
 
 body {
 	position: relative;
+	z-index: -1;
 	box-sizing: border-box;
 	font-size: $descrsize;
 	overflow-x: hidden;
@@ -26,11 +27,6 @@ a {
 	display: inline-block;
 	text-decoration: none;
 	cursor: pointer;
-}
-
-h1 {
-	color: red;
-	font-size: 50px;
 }
 
 button {
