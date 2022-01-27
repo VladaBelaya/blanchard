@@ -1,0 +1,25 @@
+.gallery {
+	background-image: url('../images/dist/gallery_bg.jpg');
+	&__select {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 0 0 25%;
+		margin-right: 50px;
+	}
+	&__label {
+		margin-bottom: 10px;
+		line-height: $lineheight;
+		font-weight: 600;
+		color: $whitecolor;
+	}
+	&__sentence {
+		max-width: 90%;
+		line-height: $lineheight;
+		font-weight: 600;
+		color: $whitecolor;
+	}
+	&__link {
+		color: $hovercolor;
+	}
+}

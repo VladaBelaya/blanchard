@@ -1,0 +1,28 @@
+.navigation {
+	display: flex;
+	align-items: center;
+	padding: 24px 0 0 2px;
+	color: $whitecolor;
+	&__arrow {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: #666;
+		background-image: url('../images/dist/arrow.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.prev {
+		transform: rotate(90deg);
+		margin-right: 19px;
+	}
+	.next {
+		transform: rotate(-90deg);
+	}
+	&__pages {
+		margin-right: 20px;
+		line-height: $lineheight;
+		vertical-align: middle;
+	}
+}
