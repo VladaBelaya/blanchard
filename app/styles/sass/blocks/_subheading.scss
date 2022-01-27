@@ -1,8 +1,9 @@
 .subheading {
-	font-size: 48px;
+	margin-bottom: 16px;
+	font-size: $fontsize-h2;
 	line-height: 65px;
 	font-weight: 400;
-	&_about-us {
-		margin-bottom: 16px;
+	&_white {
+		color: $whitecolor;
 	}
 }

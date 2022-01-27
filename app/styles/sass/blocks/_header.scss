@@ -116,7 +116,8 @@
 			border: 2px solid $hovercolor;
 		}
 		&:active {
-			border: 2px solid $activecolor;
+			border: 2px solid $hovercolor;
+			background-color: rgba(170, 98, 224, 0.4);
 		}
 		&:focus {
 			border: 2px solid $activecolor;
