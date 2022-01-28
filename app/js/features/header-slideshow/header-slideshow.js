@@ -1,5 +1,5 @@
 export default function initHeaderSlider() {
-	const images = document.querySelectorAll('.swiper-slide');
+	const images = document.querySelectorAll('.slide-show-slide');
 	const classActive = 'isActive';
 	const classDisabled = 'isDisabled'
 	let currentIndex = 1
