@@ -1,8 +1,13 @@
-import initDropdown from './dropdown.js'
-import initSwiper from './swiper.js'
-import initSelect from './select.js'
+import initDropdown from './features/dropdown/dropdown.js'
+import initHeaderSlider from './features/header-slideshow/header-slideshow.js'
+import initSelect from './features/select/select.js'
+import initFilterGallery from "./features/filter-gallery/filter-gallery.js";
+import initSliderGallery from "./features/slider-gallery/slider-gallery.js";
+
 document.addEventListener('DOMContentLoaded', () => {
 	initDropdown()
-	initSwiper()
+	initHeaderSlider()
 	initSelect()
+	initFilterGallery()
+	initSliderGallery()
 })

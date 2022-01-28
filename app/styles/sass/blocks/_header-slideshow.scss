@@ -1,0 +1,77 @@
+.swiper {
+	width: 100%;
+	height: 100%;
+
+	&__bg {
+		background-repeat: no-repeat;
+		background-position: center;
+		animation: bg-main-animation 40s alternate linear infinite;
+	}
+
+	&__bg1 {
+		width: 100%;
+		height: 800px;
+		background-image: url('../images/dist/main1.jpg');
+	}
+
+	&__bg2 {
+		width: 100%;
+		height: 800px;
+		background-image: url('../images/dist/main2.jpg');
+	}
+
+	&__bg3 {
+		width: 100%;
+		height: 800px;
+		background-image: url('../images/dist/main3.jpg');
+	}
+}
+
+@keyframes bg-main-animation {
+	0% {
+		background-size: 100% 100%;
+	}
+
+	25% {
+		background-size: 115% 115%;
+	}
+
+	50% {
+		background-size: 130% 130%;
+	}
+
+	75% {
+		background-size: 115% 115%;
+	}
+
+	100% {
+		background-size: 100% 100%;
+	}
+}
+
+.mySwiper {
+	position: absolute;
+	top: -170px;
+	z-index: -1;
+	max-width: 100%;
+	height: 800px;
+}
+
+.swiper-wrapper {
+	position: relative;
+}
+
+.swiper-slide {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: opacity 1.5s ease-in;
+}
+
+.isActive {
+	opacity: 1;
+}
+
+.isDisabled {
+	opacity: 0;
+}
