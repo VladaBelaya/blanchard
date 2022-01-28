@@ -1,0 +1,184 @@
+.catalog {
+	&__header {
+		display: flex;
+		margin-bottom: 22px;
+	}
+
+	&__flags {
+		display: flex;
+		align-items: center;
+	}
+
+	&__btn {
+		transition: filter .2s ease-in-out;
+	}
+
+	&__btn:hover {
+		filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+	}
+
+	&__img-flag {
+		border: 2px solid transparent;
+	}
+
+	&__img-flag:active {
+		border: 2px solid $activecolor;
+		border-radius: 50%;
+	}
+
+	&__btn:focus {
+		outline: none;
+		filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7))
+	}
+
+	&__flag-is-active {
+		filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7))
+	}
+
+	&__flag:not(:last-child) {
+		margin-right: 50px;
+	}
+
+	&__content {
+		display: none;
+	}
+
+	&__content-is-active {
+		display: flex;
+	}
+
+	&__card {
+		margin-right: 50px;
+	}
+
+	&__accordion {
+		width: 100%;
+	}
+
+	&__btn-years {
+		display: block;
+		width: 100%;
+		padding: 40px 0 42px;
+		font-size: 24px;
+		line-height: $lineheight;
+		font-weight: 600;
+		text-align: left;
+		cursor: pointer;
+		transition-duration: .2s;
+		transition-property: color;
+		transition-timing-function: ease-in-out;
+
+		&:hover {
+			color: $activecolor;
+		}
+
+		&:hover::after {
+			background-color: $hovercolor;
+		}
+
+		&:active::after {
+			background-color: $hovercolor;
+			border: 2px solid $activecolor;
+		}
+
+		&:focus::after {
+			background-color: $hovercolor;
+			border: 2px solid $activecolor;
+			transform: rotate(180deg);
+		}
+
+		&:active {
+			color: $activecolor;
+		}
+
+		&:focus {
+			color: $activecolor;
+		}
+
+		&:after {
+			position: absolute;
+			content: '';
+			top: 30px;
+			right: 20px;
+			width: 48px;
+			height: 48px;
+			border: 2px solid transparent;
+			border-radius: 50%;
+			background-color: #ECECEC;
+			background-image: url('../images/dist/arrow_black.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			transition-duration: .2s;
+			transition-property: background-color;
+			transition-timing-function: ease-in-out;
+		}
+	}
+
+	&__artists {
+		display: none;
+		border-top: 1px solid #cacaca;
+		padding: 25px 0;
+		transition-property: border-top;
+		transition-duration: .2s;
+		transition-timing-function: ease-in-out;
+
+		&:hover {
+			border-top: 1px solid $activecolor;
+		}
+	}
+
+	&__artists-is-active {
+		display: block;
+	}
+
+	&__link {
+		border-bottom: 1px solid transparent;
+		font-size: $descrsize;
+		line-height: $lineheight;
+		color: $textcolor;
+		transition-property: border-bottom, color;
+		transition-duration: .2s;
+		transition-timing-function: ease-in-out;
+
+		&:hover {
+			color: $hovercolor;
+			border-bottom: 1px solid $hovercolor;
+		}
+
+		&:active {
+			color: $activecolor;
+			border-bottom: 1px solid transparent;
+		}
+	}
+
+	&__accordion-item {
+		position: relative;
+		margin-top: -1px;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid #cacaca;
+		transition-property: border-top, border-bottom;
+		transition-duration: .2s;
+		transition-timing-function: ease-in-out;
+
+		&:first-child {
+			border-top: 1px solid #cacaca;
+		}
+
+		&:hover {
+			border-top: 1px solid $activecolor;
+			border-bottom: 1px solid $activecolor;
+		}
+
+		&:active {
+			border-top: 1px solid $activecolor;
+			border-bottom: 1px solid $activecolor;
+		}
+
+		&:focus {
+			border-top: 1px solid $activecolor;
+			border-bottom: 1px solid $activecolor;
+		}
+
+	}
+
+}
