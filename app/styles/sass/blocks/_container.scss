@@ -1,6 +1,7 @@
 .container {
 	max-width: 1600px;
 	margin: 0 auto;
+
 	&_header {
 		display: flex;
 		justify-content: space-between;
@@ -14,7 +15,6 @@
 	&_gallery {
 		padding: 80px 0 70px;
 		display: flex;
-		height: 845px;
 	}
 
 	&_catalog {
