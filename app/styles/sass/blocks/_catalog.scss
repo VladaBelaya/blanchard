@@ -19,6 +19,7 @@
 
 	&__img-flag {
 		border: 2px solid transparent;
+		pointer-events: none;
 	}
 
 	&__img-flag:active {
@@ -31,7 +32,7 @@
 		filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7))
 	}
 
-	&__flag-is-active {
+	&__btn-is-active {
 		filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7))
 	}
 
