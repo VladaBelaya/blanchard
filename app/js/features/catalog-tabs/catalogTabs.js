@@ -9,14 +9,15 @@ export default function initTabs() {
 			catalogContents[index].classList.remove('catalog__content-is-active')
 		})
 	}
+
 	tabFlags.addEventListener('click', event => {
 		const targetIndexBtn = event.target.dataset.flagTab
-
 		if (targetIndexBtn) {
 			removeClassActive()
-			tabButtons[targetIndexBtn].classList.add('catalog__btn-is-active')
 			catalogContents[targetIndexBtn].classList.add('catalog__content-is-active')
-
+			tabButtons[targetIndexBtn].classList.add('catalog__btn-is-active')
 		}
 	})
+
+
 }

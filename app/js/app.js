@@ -4,6 +4,8 @@ import initSelect from './features/select/select.js'
 import initFilterGallery from './features/filter-gallery/filter-gallery.js';
 import initSliderGallery from './features/slider-gallery/slider-gallery.js';
 import initTabs from './features/catalog-tabs/catalogTabs.js'
+import initAccordion from './features/accordion/accordion.js';
+
 document.addEventListener('DOMContentLoaded', () => {
 	initDropdown()
 	initHeaderSlider()
@@ -11,4 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	initFilterGallery()
 	initSliderGallery()
 	initTabs()
+	initAccordion()
 })
