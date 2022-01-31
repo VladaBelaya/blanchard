@@ -19,6 +19,7 @@
 
 	&__img-flag {
 		border: 2px solid transparent;
+		pointer-events: none;
 	}
 
 	&__img-flag:active {
@@ -31,7 +32,7 @@
 		filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7))
 	}
 
-	&__flag-is-active {
+	&__btn-is-active {
 		filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7))
 	}
 
@@ -55,14 +56,15 @@
 		width: 100%;
 	}
 
-	&__btn-years {
-		display: block;
+	&__btn-accord {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		width: 100%;
 		padding: 40px 0 42px;
 		font-size: 24px;
 		line-height: $lineheight;
 		font-weight: 600;
-		text-align: left;
 		cursor: pointer;
 		transition-duration: .2s;
 		transition-property: color;
@@ -70,21 +72,6 @@
 
 		&:hover {
 			color: $activecolor;
-		}
-
-		&:hover::after {
-			background-color: $hovercolor;
-		}
-
-		&:active::after {
-			background-color: $hovercolor;
-			border: 2px solid $activecolor;
-		}
-
-		&:focus::after {
-			background-color: $hovercolor;
-			border: 2px solid $activecolor;
-			transform: rotate(180deg);
 		}
 
 		&:active {
@@ -95,31 +82,40 @@
 			color: $activecolor;
 		}
 
-		&:after {
-			position: absolute;
-			content: '';
-			top: 30px;
-			right: 20px;
-			width: 48px;
-			height: 48px;
-			border: 2px solid transparent;
-			border-radius: 50%;
-			background-color: #ECECEC;
-			background-image: url('../images/dist/arrow_black.svg');
-			background-repeat: no-repeat;
-			background-position: center;
-			transition-duration: .2s;
-			transition-property: background-color;
-			transition-timing-function: ease-in-out;
-		}
+
+	}
+
+	&__btn-arrow {
+		width: 48px;
+		height: 48px;
+		border: 2px solid transparent;
+		border-radius: 50%;
+		background-color: #ECECEC;
+		background-image: url('../images/dist/arrow_black.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		transition-duration: 0.5s;
+		transition-property: background-color, transform, border;
+		transition-timing-function: ease-in-out;
+	}
+
+	&__btn-year {
+		pointer-events: none;
+	}
+
+	&__btn-arrow-active {
+		background-color: $hovercolor;
+		border: 2px solid $activecolor;
+		transform: rotate(180deg);
 	}
 
 	&__artists {
-		display: none;
+		height: 0;
+		padding: 0;
+		overflow: hidden;
 		border-top: 1px solid #cacaca;
-		padding: 25px 0;
-		transition-property: border-top;
-		transition-duration: .2s;
+		transition-property: height, padding, border-top;
+		transition-duration: 0.5s;
 		transition-timing-function: ease-in-out;
 
 		&:hover {
@@ -128,7 +124,8 @@
 	}
 
 	&__artists-is-active {
-		display: block;
+		padding: 25px 0;
+		height: 160px;
 	}
 
 	&__link {

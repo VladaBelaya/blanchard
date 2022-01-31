@@ -217,24 +217,24 @@
 			<div class="catalog__header">
 				<h2 class="subheading subheading_catalog">Каталог</h2>
 				<ul class="catalog__flags">
-					<li class="catalog__flag catalog__flag-is-active">
-						<button class="catalog__btn"><img src="images/dist/flag1.svg" alt="Франция"
+					<li class="catalog__flag ">
+						<button data-flag-tab="0" class="catalog__btn catalog__btn-is-active"><img src="images/dist/flag1.svg"
+								alt="Франция" class="catalog__img-flag"></button>
+					</li>
+					<li class="catalog__flag">
+						<button data-flag-tab="1" class="catalog__btn"><img src="images/dist/flag2.svg" alt="Германия"
 								class="catalog__img-flag"></button>
 					</li>
 					<li class="catalog__flag">
-						<button class="catalog__btn"><img src="images/dist/flag2.svg" alt="Германия"
+						<button data-flag-tab="2" class="catalog__btn"><img src="images/dist/flag3.svg" alt="Италия"
 								class="catalog__img-flag"></button>
 					</li>
 					<li class="catalog__flag">
-						<button class="catalog__btn"><img src="images/dist/flag3.svg" alt="Италия"
+						<button data-flag-tab="3" class="catalog__btn"><img src="images/dist/flag4.svg" alt="Россия"
 								class="catalog__img-flag"></button>
 					</li>
 					<li class="catalog__flag">
-						<button class="catalog__btn"><img src="images/dist/flag4.svg" alt="Россия"
-								class="catalog__img-flag"></button>
-					</li>
-					<li class="catalog__flag">
-						<button class="catalog__btn"><img src="images/dist/flag5.svg" alt="Испания"
+						<button data-flag-tab="4" class="catalog__btn"><img src="images/dist/flag5.svg" alt="Испания"
 								class="catalog__img-flag"></button>
 					</li>
 				</ul>
@@ -256,8 +256,11 @@
 				</article>
 				<ul class="catalog__accordion">
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1400 по 1499 гг.</button>
-						<ul class="catalog__artists catalog__artists-is-active">
+						<button data-accordion-btn="0" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1400 по 1499 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
+						<ul class="catalog__artists">
 							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
 							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
 							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
@@ -266,63 +269,81 @@
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1500 по 1599 гг.</button>
+						<button data-accordion-btn="1" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1500 по 1599 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1600 по 1699 гг.</button>
+						<button data-accordion-btn="2" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1600 по 1699 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1700 по 1799 гг.</button>
+						<button data-accordion-btn="3" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1700 по 1799 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1800 по 1899 гг.</button>
+						<button data-accordion-btn="4" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1800 по 1899 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1900 по 1999 гг.</button>
+						<button data-accordion-btn="5" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1900 по 1999 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 2000 г.</button>
+						<button data-accordion-btn="6" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 2000 г.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -344,8 +365,11 @@
 				</article>
 				<ul class="catalog__accordion">
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1400 по 1499 гг.</button>
-						<ul class="catalog__artists catalog__artists-is-active">
+						<button data-accordion-btn="0" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1400 по 1499 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
+						<ul class="catalog__artists">
 							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
 							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
 							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
@@ -354,63 +378,81 @@
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1500 по 1599 гг.</button>
+						<button data-accordion-btn="1" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1500 по 1599 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1600 по 1699 гг.</button>
+						<button data-accordion-btn="2" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1600 по 1699 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1700 по 1799 гг.</button>
+						<button data-accordion-btn="3" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1700 по 1799 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1800 по 1899 гг.</button>
+						<button data-accordion-btn="4" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1800 по 1899 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1900 по 1999 гг.</button>
+						<button data-accordion-btn="5" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1900 по 1999 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 2000 г.</button>
+						<button data-accordion-btn="6" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 2000 г.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -432,8 +474,11 @@
 				</article>
 				<ul class="catalog__accordion">
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1400 по 1499 гг.</button>
-						<ul class="catalog__artists catalog__artists-is-active">
+						<button data-accordion-btn="0" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1400 по 1499 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
+						<ul class="catalog__artists">
 							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
 							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
 							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
@@ -442,63 +487,81 @@
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1500 по 1599 гг.</button>
+						<button data-accordion-btn="1" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1500 по 1599 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1600 по 1699 гг.</button>
+						<button data-accordion-btn="2" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1600 по 1699 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1700 по 1799 гг.</button>
+						<button data-accordion-btn="3" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1700 по 1799 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1800 по 1899 гг.</button>
+						<button data-accordion-btn="4" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1800 по 1899 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1900 по 1999 гг.</button>
+						<button data-accordion-btn="5" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1900 по 1999 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 2000 г.</button>
+						<button data-accordion-btn="6" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 2000 г.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -520,8 +583,11 @@
 				</article>
 				<ul class="catalog__accordion">
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1400 по 1499 гг.</button>
-						<ul class="catalog__artists catalog__artists-is-active">
+						<button data-accordion-btn="0" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1400 по 1499 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
+						<ul class="catalog__artists">
 							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
 							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
 							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
@@ -530,63 +596,81 @@
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1500 по 1599 гг.</button>
+						<button data-accordion-btn="1" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1500 по 1599 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1600 по 1699 гг.</button>
+						<button data-accordion-btn="2" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1600 по 1699 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1700 по 1799 гг.</button>
+						<button data-accordion-btn="3" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1700 по 1799 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1800 по 1899 гг.</button>
+						<button data-accordion-btn="4" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1800 по 1899 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1900 по 1999 гг.</button>
+						<button data-accordion-btn="5" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1900 по 1999 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 2000 г.</button>
+						<button data-accordion-btn="6" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 2000 г.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -608,8 +692,11 @@
 				</article>
 				<ul class="catalog__accordion">
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1400 по 1499 гг.</button>
-						<ul class="catalog__artists catalog__artists-is-active">
+						<button data-accordion-btn="0" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1400 по 1499 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
+						<ul class="catalog__artists">
 							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
 							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
 							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
@@ -618,63 +705,81 @@
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1500 по 1599 гг.</button>
+						<button data-accordion-btn="1" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1500 по 1599 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1600 по 1699 гг.</button>
+						<button data-accordion-btn="2" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1600 по 1699 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1700 по 1799 гг.</button>
+						<button data-accordion-btn="3" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1700 по 1799 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1800 по 1899 гг.</button>
+						<button data-accordion-btn="4" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1800 по 1899 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 1900 по 1999 гг.</button>
+						<button data-accordion-btn="5" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 1900 по 1999 гг.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 					<li class="catalog__accordion-item">
-						<button class="catalog__btn-years">C 2000 г.</button>
+						<button data-accordion-btn="6" class="catalog__btn-accord">
+							<span class="catalog__btn-year">C 2000 г.</span>
+							<span class="catalog__btn-arrow"></span>
+						</button>
 						<ul class="catalog__artists">
-							<li class="catalog__artist">Бенедетто ди Биндо</li>
-							<li class="catalog__artist">Бергоньоне, Амброджо</li>
-							<li class="catalog__artist">Биссоло, Франческо</li>
-							<li class="catalog__artist">Больтраффио, Джованни</li>
-							<li class="catalog__artist">Бонсиньори, Франческо</li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бенедетто ди Биндо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бергоньоне, Амброджо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Биссоло, Франческо</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Больтраффио, Джованни</a></li>
+							<li class="catalog__artist"><a href="#" class="catalog__link">Бонсиньори, Франческо</a></li>
 						</ul>
 					</li>
 				</ul>

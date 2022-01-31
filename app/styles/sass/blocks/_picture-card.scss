@@ -1,19 +1,24 @@
 .picture-card {
 	flex: 0 0 46%;
+
 	&__image {
 		margin-bottom: 20px;
+		width: 750px;
 	}
+
 	&__header {
 		margin-bottom: 10px;
 		font-size: 24px;
 		line-height: $lineheight;
 		font-weight: 600;
 	}
+
 	&__years-of-birth {
 		margin-bottom: 10px;
 		font-size: 12px;
 		color: #999;
 	}
+
 	&__text {
 		line-height: $lineheight;
 	}
