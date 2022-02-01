@@ -61,7 +61,7 @@
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
-		padding: 40px 0 42px;
+		padding: 30px 0 32px;
 		font-size: 24px;
 		line-height: $lineheight;
 		font-weight: 600;
@@ -113,18 +113,14 @@
 		height: 0;
 		padding: 0;
 		overflow: hidden;
-		border-top: 1px solid #cacaca;
-		transition-property: height, padding, border-top;
+		transition-property: height, padding;
 		transition-duration: 0.5s;
 		transition-timing-function: ease-in-out;
 
-		&:hover {
-			border-top: 1px solid $activecolor;
-		}
 	}
 
 	&__artists-is-active {
-		padding: 25px 0;
+		padding: 6px 0 25px;
 		height: 160px;
 	}
 
