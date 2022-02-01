@@ -1,5 +1,8 @@
 .picture-card {
+	opacity: 0;
+	display: none;
 	flex: 0 0 46%;
+	transition: opacity .2s ease-in-out;
 
 	&__image {
 		margin-bottom: 20px;
@@ -21,5 +24,10 @@
 
 	&__text {
 		line-height: $lineheight;
+	}
+
+	&_active {
+		display: block;
+		opacity: 1;
 	}
 }
