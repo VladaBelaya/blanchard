@@ -6,19 +6,31 @@
 	line-height: 25px;
 	font-weight: bold;
 	color: $whitecolor;
-	background-color: #9D5CD0;
+	background-color: $hovercolor;
 	transition-duration: .2s;
 	transition-timing-function: ease-in-out;
 	transition-property: background-color, border;
+
 	&:hover {
 		border: 2px solid #D1A9F0;
 	}
+
 	&:active {
 		background-color: $activecolor;
 		border: 2px solid #D1A9F0;
 	}
+
 	&:focus {
 		outline: 2px solid $hovercolor;
 		outline-offset: 4px;
+	}
+
+	&_events {
+		display: block;
+		padding: 18px 35px;
+		margin: 0 auto;
+		border: 2px solid $hovercolor;
+		color: $hovercolor;
+		background-color: transparent;
 	}
 }

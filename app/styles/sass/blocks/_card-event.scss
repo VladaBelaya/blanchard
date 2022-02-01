@@ -1,0 +1,53 @@
+.card-event {
+	flex: 0 0 500px;
+	margin-bottom: 30px;
+
+	&__image {
+		width: 100%;
+		height: 300px;
+	}
+
+	&__text {
+		padding: 12px 50px 50px;
+		margin-top: -4px;
+		border: 1px solid #CACACA;
+		border-top: none;
+	}
+
+	&__date {
+		margin-left: auto;
+		margin-bottom: 6px;
+		text-align: right;
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 600;
+		color: #999;
+	}
+
+	&__header {
+		min-height: 60px;
+		margin-bottom: 10px;
+		font-size: 23px;
+		line-height: $lineheight;
+		font-weight: 600;
+	}
+
+	&__descr {
+		min-height: 128px;
+		margin-bottom: 50px;
+		line-height: $lineheight;
+	}
+
+	&__link {
+		border-bottom: 1px solid $hovercolor;
+		color: $hovercolor;
+		transition-property: color, border-bottom;
+		transition-duration: .2s;
+		transition-timing-function: ease-in-out;
+
+		&:hover {
+			color: $activecolor;
+			border-bottom: 1px solid $activecolor;
+		}
+	}
+}

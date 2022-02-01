@@ -1,0 +1,11 @@
+.events {
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+
+	&__card:not(:nth-child(3n)) {
+		margin-right: 50px;
+	}
+}

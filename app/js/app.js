@@ -6,6 +6,7 @@ import initSliderGallery from './features/slider-gallery/slider-gallery.js'
 import initTabs from './features/catalog-tabs/catalogTabs.js'
 import initAccordion from './features/accordion/accordion.js'
 import initLinkArtist from './features/link-tabs/link-tabs.js'
+import initEvents from './features/add-events/addEvents.js'
 
 document.addEventListener('DOMContentLoaded', () => {
 	initDropdown()
@@ -16,4 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	initTabs()
 	initAccordion()
 	initLinkArtist()
+	initEvents()
 })
