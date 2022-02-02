@@ -1,0 +1,46 @@
+.card-edition {
+	&__text {
+		padding: 22px 0;
+		margin-top: -4px;
+	}
+
+	&__header {
+		line-height: 22px;
+		font-weight: bold;
+		color: $whitecolor;
+	}
+
+	&__header-price {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	&__descr {
+		line-height: 22px;
+		font-weight: normal;
+		color: $whitecolor;
+	}
+
+	&__price {
+		line-height: 22px;
+		font-weight: normal;
+		font-style: italic;
+		color: $whitecolor;
+	}
+
+	&__btn {
+		padding: 8px 14px;
+		border: 2px solid $activecolor;
+		font-size: $descrsize;
+		line-height: 22px;
+		font-weight: bold;
+		color: $whitecolor;
+		background-color: transparent;
+		transition: background-color .2s ease-in-out;
+
+		&:hover {
+			background-color: $activecolor;
+		}
+	}
+}

@@ -33,4 +33,13 @@
 		color: $hovercolor;
 		background-color: transparent;
 	}
+
+	&_editions-card {
+		padding: 8px 14px;
+		border: 2px solid $activecolor;
+		font-size: $descrsize;
+		line-height: 22px;
+		color: $whitecolor;
+		background-color: transparent;
+	}
 }
