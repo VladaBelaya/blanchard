@@ -11,8 +11,10 @@
 	<title>Blanchard - художественная галерея</title>
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+	<link rel="stylesheet" href="libs/range-slider/nouislider.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 	<script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+	<script defer src="libs/range-slider/nouislider.min.js"></script>
 </head>
 
 <body>
@@ -183,7 +185,7 @@
 		</div>
 	</section>
 	<section class="about-us">
-		<div class="container container_about-us">
+		<div class="container container_wrapper">
 			<h2 class="subheading">О нас</h2>
 			<p class="descr descr_about-us">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
 				однозначно
@@ -197,7 +199,7 @@
 		</div>
 	</section>
 	<section class="gallery">
-		<div class="container container_gallery">
+		<div class="container container_flex">
 			<div class="gallery__select">
 				<div class="gallery__content">
 					<h2 class="subheading subheading_white">Галерея</h2>
@@ -229,7 +231,7 @@
 		</div>
 	</section>
 	<section class="catalog">
-		<div class="container container_catalog">
+		<div class="container container_wrapper">
 			<div class="catalog__header">
 				<h2 class="subheading subheading_catalog">Каталог</h2>
 				<ul class="catalog__flags">
@@ -1182,6 +1184,92 @@
 			<h2 class="subheading">События</h2>
 			<ul class="events__cards"></ul>
 			<button class="btn btn_events">Все события</button>
+		</div>
+	</section>
+	<section class="editions">
+		<div class="container container_flex">
+			<div class="editions__filter">
+				<h2 class="subheading subheading_white">Издания</h2>
+				<div class="editions__descr">Категории</div>
+				<ul class="editions__checkbox-list">
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="bestsellers" class="editions__checkbox">
+						<label for="bestsellers" class="editions__label">Бестселлеры</label>
+					</li>
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="art" class="editions__checkbox">
+						<label for="art" class="editions__label">Искусство</label>
+					</li>
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="architecture" class="editions__checkbox">
+						<label for="architecture" class="editions__label">Архитектура</label>
+					</li>
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="design" class="editions__checkbox">
+						<label for="design" class="editions__label">Дизайн</label>
+					</li>
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="fashion" class="editions__checkbox">
+						<label for="fashion" class="editions__label">Мода</label>
+					</li>
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="children" class="editions__checkbox">
+						<label for="children" class="editions__label">Детям</label>
+					</li>
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="Fiction" class="editions__checkbox">
+						<label for="fiction" class="editions__label">Художественная литература</label>
+					</li>
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="publicism" class="editions__checkbox">
+						<label for="publicism" class="editions__label">Публицистика</label>
+					</li>
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="guides" class="editions__checkbox">
+						<label for="guides" class="editions__label">Путеводители</label>
+					</li>
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="philosophy" class="editions__checkbox">
+						<label for="philosophy" class="editions__label">Философия</label>
+					</li>
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="educationalLiterature" class="editions__checkbox">
+						<label for="educationalLiterature" class="editions__label">Учебная литература</label>
+					</li>
+					<li class="editions__checkbox-item">
+						<input type="checkbox" id="MagazinesAndNewspapers" class="editions__checkbox">
+						<label for="MagazinesAndNewspapers" class="editions__label">Журналы и газеты</label>
+					</li>
+				</ul>
+				<div class="editions__price-filter">
+					<div class="editions__descr">Цена</div>
+					<div id="range-slider"></div>
+				</div>
+			</div>
+			<div class="editions__slider-container">
+				<div class="navigation">
+					<span class="navigation__arrow prev"></span>
+					<span class="navigation__pages">1 / 2</span>
+					<span class="navigation__arrow next"></span>
+				</div>
+				<ul class="editions__slider">
+					<li class="card-edition editions__card">
+						<article class="card-adition__content">
+							<img src="images/dist/edition1.jpg" alt="Искусство цвета" class="card-edition__image">
+							<div class="card-edition__text">
+								<div class="card-edition__header-price">
+									<div class="card-edition__descrs">
+										<div class="card-edition__header">Искусство цвета</div>
+										<div class="card-edition__descr">Иттен, Иоханнес</div>
+									</div>
+									<div class="card-edition__price">620 руб</div>
+								</div>
+								<a href="" class="btn btn_editions-card card-edition__btn">Заказать</a>
+							</div>
+						</article>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 </main>
