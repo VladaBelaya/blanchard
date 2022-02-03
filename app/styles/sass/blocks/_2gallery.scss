@@ -13,8 +13,8 @@
 		margin-right: 185px;
 	}
 
-	&__card:not(:last-child) {
-		margin-right: 50px;
+	&__list {
+		grid-template-rows: repeat(1, 1fr);
 	}
 
 	&__slider {
