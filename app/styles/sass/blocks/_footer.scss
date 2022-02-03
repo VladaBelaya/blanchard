@@ -1,0 +1,12 @@
+.footer {
+	background-color: #000;
+
+	&__icon-link {
+		margin-right: 20px;
+		transition: filter .3s ease-in-out;
+
+		&:hover {
+			filter: brightness(150%)
+		}
+	}
+}
