@@ -1,0 +1,41 @@
+.contacts {
+	&__info {
+		padding: 124px 160px;
+		border: 1px solid #CACACA;
+		flex: 0 0 18%;
+	}
+
+	&__header-place {
+		margin-bottom: 4px;
+		font-size: 24px;
+		line-height: $lineheight;
+		font-weight: 600;
+	}
+
+	&__header {
+		margin-bottom: 20px;
+		font-size: 24px;
+		font-weight: normal;
+	}
+
+	&__form {
+		margin-bottom: 38px;
+	}
+
+	&__social-icon {
+		margin-right: 20px;
+		opacity: 1;
+		transition: opacity .2s ease-in-out;
+		border: 1px solid transparent;
+
+		&:hover {
+			opacity: .7;
+		}
+
+		&:active {
+			opacity: 1;
+			filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.6));
+
+		}
+	}
+}

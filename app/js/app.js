@@ -8,6 +8,8 @@ import initAccordion from './features/accordion/accordion.js'
 import initLinkArtist from './features/link-tabs/link-tabs.js'
 import initEvents from './features/add-events/addEvents.js'
 import initRangeSlider from './features/range-slider/rangeSlider.js'
+import initMap from './features/map/map.js'
+
 
 document.addEventListener('DOMContentLoaded', () => {
 	initDropdown()
@@ -20,4 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	initLinkArtist()
 	initEvents()
 	initRangeSlider()
+	initMap()
 })
