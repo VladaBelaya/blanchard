@@ -1,7 +1,13 @@
 .descr {
 	font-size: $descrsize;
 	line-height: $lineheight;
+
 	&_about-us {
 		max-width: 68%;
+	}
+
+	&_partners {
+		max-width: 72%;
+		margin-bottom: 30px;
 	}
 }
