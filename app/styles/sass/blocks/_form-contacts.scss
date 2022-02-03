@@ -1,0 +1,28 @@
+.form-contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	box-sizing: border-box;
+
+	&__input {
+		margin-bottom: 22px;
+		width: 100%;
+		padding: 8px 24px;
+		border: 1px solid $textcolor;
+		border-radius: 100px;
+
+		&::placeholder {
+			color: #999;
+		}
+	}
+
+	&__header {
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+
+	&__label {
+		width: 100%;
+	}
+
+}
