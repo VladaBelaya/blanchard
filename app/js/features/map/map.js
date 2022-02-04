@@ -16,7 +16,7 @@ export default function initMap() {
 					// Необходимо указать данный тип макета.
 					iconLayout: "default#image",
 					// Своё изображение иконки метки.
-					iconImageHref: "./dist/images/dist/metka.svg",
+					iconImageHref: "../images/dist/metka.svg",
 					// Размеры метки.
 					iconImageSize: [30, 30],
 
