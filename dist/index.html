@@ -14,8 +14,9 @@
 	<link rel="stylesheet" href="libs/range-slider/nouislider.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 	<script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-	<script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
 	</script>
+
 	<script defer src="libs/range-slider/nouislider.min.js"></script>
 </head>
 
@@ -1367,8 +1368,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="map" id="map"></div>
+			<!-- <div class="map" id="map"></div> -->
+
+			<div class="map" id="map" style="width: 100%; height: 100%"></div>
 		</div>
+
 	</section>
 </main>
 <footer class="footer">
@@ -1384,6 +1388,32 @@
 		</div>
 	</div>
 </footer>
+	<script>
+		ymaps.ready(function () {
+			const myMap = new ymaps.Map("map", {
+					center: [55.75846806898367, 37.60108849999989],
+					zoom: 15,
+					controls: [],
+				}),
+				// Создаём макет содержимого.
+				myPlacemark = new ymaps.Placemark(
+					myMap.getCenter([55.75846806898367, 37.60108849999989]), {
+						hintContent: "",
+					}, {
+						// Опции.
+						// Необходимо указать данный тип макета.
+						iconLayout: "default#image",
+						// Своё изображение иконки метки.
+						iconImageHref: "../images/dist/metka.svg",
+						// Размеры метки.
+						iconImageSize: [30, 30],
+
+					}
+				);
+
+			myMap.geoObjects.add(myPlacemark);
+		});
+	</script>
 	<script src="js/app.min.js"></script>
 
 	</body>
