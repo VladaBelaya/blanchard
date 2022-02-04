@@ -1,4 +1,6 @@
-import {allCategories} from "../../../db/filter-gallery.data.js";
+import {
+	allCategories
+} from "../../../db/filter-gallery.data.js";
 import Slider from "../slider/Slider.js";
 
 export default function initFilterGallery() {

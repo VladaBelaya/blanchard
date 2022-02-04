@@ -1,3 +1,7 @@
+import {
+	allEvents
+} from "../../../db/events.js"
+
 export default function initEvents() {
 	const eventsList = document.querySelector('.events__cards')
 	const eventsBtn = document.querySelector('.btn_events')
@@ -40,24 +44,9 @@ export default function initEvents() {
 		}
 	}
 
-	const getGoods = () => {
-		fetch('db/events.json')
-			.then(response => {
-				if (response.ok) {
-					return response.json()
-				} else {
-					throw new Error('Данные были получены с ошибкой')
-				}
-			})
-			.then(data => {
-				changeData(data)
-			})
-			.catch(error => {
-				console.error(error.message)
-			})
-	}
+	eventsBtn.addEventListener('click', () => {
+		changeData(allEvents)
+	})
 
-	eventsBtn.addEventListener('click', getGoods)
-
-	getGoods()
+	changeData(allEvents)
 }

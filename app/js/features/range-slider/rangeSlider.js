@@ -1,4 +1,6 @@
-import {products} from "../../../db/products.js";
+import {
+	products
+} from "../../../db/products.js";
 import Slider from "../slider/Slider.js";
 
 export default function initRangeSlider() {
@@ -43,7 +45,7 @@ export default function initRangeSlider() {
 			template$ += `
 					<li class="card-edition editions__card">
 						<article class="card-adition__content">
-							<img src="${category.thumbnail}" alt="Искусство цвета" class="card-edition gallery__slide-img">
+							<img src="${category.thumbnail}" alt="Искусство цвета" class="gallery__slide-img">
 							<div class="card-edition__text">
 								<div class="card-edition__header-price">
 									<div class="card-edition__descrs">
