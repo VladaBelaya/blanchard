@@ -15,6 +15,7 @@
 
 	&__list {
 		grid-template-rows: repeat(1, 1fr);
+		grid-template-columns: repeat(3, 1fr)
 	}
 
 	&__slider {
