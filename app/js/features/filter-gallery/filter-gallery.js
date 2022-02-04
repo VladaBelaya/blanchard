@@ -1,5 +1,5 @@
-import {allCategories} from "./filter-gallery.data.js";
-import initSliderGallery from "../slider-gallery/slider-gallery.js";
+import {allCategories} from "../../../db/filter-gallery.data.js";
+import Slider from "../slider/Slider.js";
 
 export default function initFilterGallery() {
 	const selectItems = document.querySelectorAll('.select__item')
@@ -7,11 +7,22 @@ export default function initFilterGallery() {
 
 	renderCategory()
 
+	function initSlider() {
+		return new Slider('.gallery__slider', {
+			navigationEl: {
+				prevEl: '.prev',
+				nextEl: '.next'
+			},
+		})
+	}
+
+	initSlider()
+
 	selectItems.forEach((select) => {
 		select.addEventListener('click', event => {
 			const filter = event.target.textContent
 			renderCategory(filter)
-			initSliderGallery()
+			initSlider()
 		})
 	})
 

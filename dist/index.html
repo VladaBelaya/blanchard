@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="libs/range-slider/nouislider.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 	<script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+	<script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
 	</script>
 	<script defer src="libs/range-slider/nouislider.min.js"></script>
 </head>
@@ -220,7 +220,8 @@
 					</div>
 				</div>
 				<div class="gallery__sentence">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
-					скачиваний <a href="#" class="gallery__link">авторизуйтесь,</a> либо воспользуйтесь лицензией. </div>
+					скачиваний <a href="#" class="gallery__link">авторизуйтесь,</a> либо воспользуйтесь лицензией.
+				</div>
 			</div>
 			<div class="gallery__slider">
 				<div class="navigation">
@@ -239,7 +240,8 @@
 				<ul class="catalog__flags">
 					<li class="catalog__flag ">
 						<button data-flag-tab="0" class="catalog__btn catalog__btn-is-active"><img src="images/dist/flag1.svg"
-								alt="Франция" class="catalog__img-flag"></button>
+								alt="Франция" class="catalog__img-flag">
+						</button>
 					</li>
 					<li class="catalog__flag">
 						<button data-flag-tab="1" class="catalog__btn"><img src="images/dist/flag2.svg" alt="Германия"
@@ -1246,76 +1248,23 @@
 				<div class="editions__price-filter">
 					<div class="editions__descr">Цена</div>
 					<div id="range-slider"></div>
+					<div class="input-wrapper">
+						<label>
+							<input readonly class="price-input min" type="text">
+						</label>
+						<label>
+							<input readonly class="price-input max" type="text">
+						</label>
+					</div>
 				</div>
 			</div>
-			<div class="gallery__slider">
+			<div class="gallery__slider editions-slider">
 				<div class="navigation">
 					<span class="navigation__arrow prev"></span>
-					<span class="navigation__pages">1 / 2</span>
+					<span class="navigation__pages"></span>
 					<span class="navigation__arrow next"></span>
 				</div>
-				<ul class="gallery__list editions__list">
-					<li class="card-edition editions__card">
-						<article class="card-adition__content">
-							<img src="images/dist/edition1.jpg" alt="Искусство цвета" class="card-edition__image">
-							<div class="card-edition__text">
-								<div class="card-edition__header-price">
-									<div class="card-edition__descrs">
-										<div class="card-edition__header">Искусство цвета</div>
-										<div class="card-edition__descr">Иттен, Иоханнес</div>
-									</div>
-									<div class="card-edition__price">620 руб</div>
-								</div>
-								<a href="" class="btn btn_editions-card card-edition__btn">Заказать</a>
-							</div>
-						</article>
-					</li>
-					<li class="card-edition editions__card">
-						<article class="card-adition__content">
-							<img src="images/dist/edition1.jpg" alt="Искусство цвета" class="card-edition__image">
-							<div class="card-edition__text">
-								<div class="card-edition__header-price">
-									<div class="card-edition__descrs">
-										<div class="card-edition__header">Искусство цвета</div>
-										<div class="card-edition__descr">Иттен, Иоханнес</div>
-									</div>
-									<div class="card-edition__price">620 руб</div>
-								</div>
-								<a href="" class="btn btn_editions-card card-edition__btn">Заказать</a>
-							</div>
-						</article>
-					</li>
-					<li class="card-edition editions__card">
-						<article class="card-adition__content">
-							<img src="images/dist/edition1.jpg" alt="Искусство цвета" class="card-edition__image">
-							<div class="card-edition__text">
-								<div class="card-edition__header-price">
-									<div class="card-edition__descrs">
-										<div class="card-edition__header">Искусство цвета</div>
-										<div class="card-edition__descr">Иттен, Иоханнес</div>
-									</div>
-									<div class="card-edition__price">620 руб</div>
-								</div>
-								<a href="" class="btn btn_editions-card card-edition__btn">Заказать</a>
-							</div>
-						</article>
-					</li>
-					<li class="card-edition editions__card">
-						<article class="card-adition__content">
-							<img src="images/dist/edition1.jpg" alt="Искусство цвета" class="card-edition__image">
-							<div class="card-edition__text">
-								<div class="card-edition__header-price">
-									<div class="card-edition__descrs">
-										<div class="card-edition__header">Искусство цвета</div>
-										<div class="card-edition__descr">Иттен, Иоханнес</div>
-									</div>
-									<div class="card-edition__price">620 руб</div>
-								</div>
-								<a href="" class="btn btn_editions-card card-edition__btn">Заказать</a>
-							</div>
-						</article>
-					</li>
-				</ul>
+				<ul class="gallery__list editions__list"></ul>
 			</div>
 		</div>
 	</section>
@@ -1437,5 +1386,6 @@
 </footer>
 	<script src="js/app.min.js"></script>
 
-</body>
-</html>
+	</body>
+
+	</html>

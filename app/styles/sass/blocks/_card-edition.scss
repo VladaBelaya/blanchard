@@ -1,6 +1,6 @@
 .card-edition {
 	&__text {
-		padding: 22px 0;
+		padding: 22px 6px;
 		margin-top: -4px;
 	}
 
@@ -43,4 +43,26 @@
 			background-color: $activecolor;
 		}
 	}
+}
+
+.input-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 14px;
+
+	input {
+		width: 60px;
+		padding: 10px;
+		border: 1px solid #b6b6b6;
+		border-radius: 14px;
+		background: transparent;
+		color: white;
+		pointer-events: none;
+		outline: none;
+	}
+}
+
+.editions__price-filter {
+	width: 300px;
 }
