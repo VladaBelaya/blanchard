@@ -82,9 +82,7 @@ export default class Slider {
 	}
 
 	static #setToActiveButtons({...buttons}) {
-		const {buttonPrev, buttonNext} = buttons
-		const controls = [buttonPrev, buttonNext]
-		controls.forEach((button) => button.classList.remove(Slider.#sliderClasses.DISABLED))
+		Object.values(buttons).forEach((button) => button.classList.remove(Slider.#sliderClasses.DISABLED))
 	}
 
 	static #setToDisableButton(button) {
